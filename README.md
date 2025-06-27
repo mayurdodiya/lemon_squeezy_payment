@@ -1,24 +1,15 @@
-Create Lemon Squeezy Account
-
-Create Store
-
-Create Product & Variant
-
-What is a Variant?
-
-One-Time Payment Flow
-
-Generate Payment Link
-
-Webhook Setup
-
-Database IDs to Store
-
-Important Webhook Events
-
-Control Price from Backend
-
-Conclusion
+Steps:- 
+    Create Lemon Squeezy Account
+    Create Store
+    Create Product & Variant
+    What is a Variant?
+    One-Time Payment Flow
+    Generate Payment Link
+    Webhook Setup
+    Database IDs to Store
+    Important Webhook Events
+    Control Price from Backend
+    Conclusion
 
 
 1️⃣ Create Lemon Squeezy Account
