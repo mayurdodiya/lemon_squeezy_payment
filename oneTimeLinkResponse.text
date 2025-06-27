@@ -1,0 +1,100 @@
+// one time payment link response
+{
+  // {
+  //   "jsonapi": {
+  //     "version": "1.0"   // 🔸 API version following JSON:API standards
+  //   },
+  //   "links": {
+  //     "self": "https://api.lemonsqueezy.com/v1/checkouts/9b67bfb9-3622-44db-a084-a0967e6fc2b1"
+  //     // 🔸 Link to this specific checkout API resource (RESTful endpoint)
+  //   },
+  //   "data": {
+  //     "type": "checkouts",    // 🔸 Type of resource (this is a checkout session)
+  //     "id": "9b67bfb9-3622-44db-a084-a0967e6fc2b1", // 🔸 Unique ID for this checkout session
+  //     "attributes": {
+  //       "store_id": 194730,   // 🔸 Store ID that this checkout belongs to
+  //       "variant_id": 871501, // 🔸 Variant (product) ID used for this checkout
+  //       "custom_price": null, // 🔸 No custom price set (Checkouts API doesn't support direct custom pricing)
+  //       "product_options": {  // 🔸 Product-related UI & settings customization
+  //         "name": "",  // 🔸 Override product name (empty = default)
+  //         "description": "",  // 🔸 Override product description (empty = default)
+  //         "media": [], // 🔸 Override media/images (empty = default)
+  //         "redirect_url": "", // 🔸 Redirect after payment (if set)
+  //         "receipt_button_text": "", // 🔸 Button text on receipt page
+  //         "receipt_link_url": "", // 🔸 Link on receipt page
+  //         "receipt_thank_you_note": "", // 🔸 Thank-you note on receipt
+  //         "enabled_variants": [], // 🔸 Limit to certain variants (empty = allow default variant)
+  //         "confirmation_title": "", // 🔸 Title on confirmation page
+  //         "confirmation_message": "", // 🔸 Message on confirmation page
+  //         "confirmation_button_text": "" // 🔸 Button text on confirmation
+  //       },
+  //       "checkout_options": { // 🔸 Options affecting checkout UI/flow
+  //         "embed": false,    // 🔸 Whether it's embedded (iframe) or hosted (false = hosted)
+  //         "media": true,     // 🔸 Show product image/media
+  //         "logo": true,      // 🔸 Show store logo
+  //         "desc": true,      // 🔸 Show product description
+  //         "discount": true,  // 🔸 Allow discount code entry
+  //         "skip_trial": false, // 🔸 Skip free trial (for subscriptions)
+  //         "quantity": 1,     // 🔸 Quantity selector (usually 1 for one-time purchases)
+  //         "subscription_preview": true, // 🔸 Show subscription breakdown (for recurring)
+  //         "button_color": "#7047EB", // 🔸 Checkout button color
+  //         "locale": "en"     // 🔸 Language (en = English)
+  //       },
+  //       "checkout_data": { // 🔸 Pre-filled checkout data (customer info, discount, etc.)
+  //         "email": "",       // 🔸 Customer email (empty = user fills it)
+  //         "name": "",        // 🔸 Customer name (empty = user fills it)
+  //         "billing_address": [], // 🔸 Billing info (empty = user fills it)
+  //         "tax_number": "",  // 🔸 Tax/VAT number
+  //         "discount_code": "", // 🔸 Discount applied (none)
+  //         "custom": {
+  //           "user_id": "123"  // 🔸 Custom metadata (you sent this — useful to identify user)
+  //         },
+  //         "variant_quantities": [] // 🔸 (For multi-variant checkouts, not used here)
+  //       },
+  //       "preview": { // 🔸 Price preview breakdown
+  //         "currency": "INR", // 🔸 Your store currency (₹)
+  //         "currency_rate": 0.01165535, // 🔸 INR to USD conversion rate
+  //         "subtotal": 10000, // 🔸 Subtotal in INR (₹100.00 * 100)
+  //         "discount_total": 0, // 🔸 Discount applied (none)
+  //         "tax": 0,            // 🔸 Tax applied (none)
+  //         "setup_fee": 0,      // 🔸 Any setup fees (none)
+  //         "total": 10000,      // 🔸 Total in INR (₹100.00)
+  //         "subtotal_usd": 117, // 🔸 Approximate USD equivalent ($1.17)
+  //         "discount_total_usd": 0,
+  //         "tax_usd": 0,
+  //         "setup_fee_usd": 0,
+  //         "total_usd": 117,    // 🔸 Total in USD
+  //         "subtotal_formatted": "₹100.00", // 🔸 Formatted display
+  //         "discount_total_formatted": "₹0.00",
+  //         "tax_formatted": "₹0.00",
+  //         "setup_fee_formatted": "₹0.00",
+  //         "total_formatted": "₹100.00"
+  //       },
+  //       "expires_at": "2025-12-31T23:59:59.000000Z", // 🔸 Link expiry date
+  //       "created_at": "2025-06-26T05:40:56.000000Z", // 🔸 Created timestamp
+  //       "updated_at": "2025-06-26T05:40:56.000000Z", // 🔸 Last updated timestamp
+  //       "test_mode": true, // 🔸 ✅ This is in test mode (important to know!)
+  //       "url": "https://rejoicestore.lemonsqueezy.com/checkout/custom/9b67bfb9-3622-44db-a084-a0967e6fc2b1?expires=1767225599&signature=d7186ccdf4f23efa78cee85701974e971ba61684ad025ccf084813355c94ca15"
+  //       // 🔥 🔥 This is your **payment link** to send to the customer
+  //     },
+  //     "relationships": { // 🔸 Links to related resources (store, variant)
+  //       "store": {
+  //         "links": {
+  //           "related": "https://api.lemonsqueezy.com/v1/checkouts/9b67bfb9-3622-44db-a084-a0967e6fc2b1/store",
+  //           "self": "https://api.lemonsqueezy.com/v1/checkouts/9b67bfb9-3622-44db-a084-a0967e6fc2b1/relationships/store"
+  //         }
+  //       },
+  //       "variant": {
+  //         "links": {
+  //           "related": "https://api.lemonsqueezy.com/v1/checkouts/9b67bfb9-3622-44db-a084-a0967e6fc2b1/variant",
+  //           "self": "https://api.lemonsqueezy.com/v1/checkouts/9b67bfb9-3622-44db-a084-a0967e6fc2b1/relationships/variant"
+  //         }
+  //       }
+  //     },
+  //     "links": {
+  //       "self": "https://api.lemonsqueezy.com/v1/checkouts/9b67bfb9-3622-44db-a084-a0967e6fc2b1"
+  //       // 🔸 Direct API URL for this checkout object
+  //     }
+  //   }
+  // }
+}

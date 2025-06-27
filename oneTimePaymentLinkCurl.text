@@ -1,0 +1,37 @@
+onetime payment link curl
+
+curl --location 'https://api.lemonsqueezy.com/v1/checkouts' \
+--header 'Accept: application/vnd.api+json' \
+--header 'Content-Type: application/vnd.api+json' \
+--header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5NGQ1OWNlZi1kYmI4LTRlYTUtYjE3OC1kMjU0MGZjZDY5MTkiLCJqdGkiOiJjZGU1ZTFmM2JhODYyYmI3NDZjYTIyOWM3N2VkMWFlYjJjNDUyMjljNTk2Y2ZlYzUwNmIyNmU4MzVhODg1MWNiN2IzNzYyOTgyZTQ5YWQ4ZiIsImlhdCI6MTc1MDg1MzMyNi45NjQ5NTgsIm5iZiI6MTc1MDg1MzMyNi45NjQ5NiwiZXhwIjoyMDY2Mzg2MTI2LjkzMzgwMiwic3ViIjoiNTEwNDk1NSIsInNjb3BlcyI6W119.Xx1wjmingZV2hBEqzSZkHXWpbrRyPr9CMAlwA2E8HTg1BX2tc5HqH_D_DmFksyUu-IWtSH2UBN8yh61r1EEiTcPtibfR_q6GnWrRyiGWUxdmLFjPWgnmv2T5d4KqAtU61CXIDCi07WJyCZozrSGXXzyiRP2e2yoh8_-v70NP5hdVVphVJqodyO4caWwtweG57hFD4TEk-5Ec-jGe0T7Fl68Rv1UJy4GOpKPfeYKWY05RTuC5JOeqyImxN_pugQtKKBgdyPqTE6Grm3j-ldDh2iOD452voi8n9fzt5CNoWAOk3DbB4AFNBu-O8rYf36neECqeOm3cj5oDZsCoI_XrAZvN80JoPYMRG1jzFg13lNuWYqKQ3roQMMA_KzA3yYe_5vyp8rZ-ukaEuU2DbADkzdUuAPmqwRZjij5G60qgtx-Dga03WObvEiwLlaLxmXF3ZBMIbptcB0aasTt-ci2jfNLUC9NwE0ehrYVhlb9IBB1W1Zhek5N99fdZGq_XBlcK' \
+--data '{
+  "data": {
+    "type": "checkouts",
+    "attributes": {
+      "checkout_options": {
+        "button_color": "#7047EB"
+      },
+      "checkout_data": {
+        "custom": {
+          "user_id": "123"
+        }
+      },
+      "expires_at": "2025-12-31T23:59:59Z",
+      "preview": true
+    },
+    "relationships": {
+      "store": {
+        "data": {
+          "type": "stores",
+          "id": "194730"
+        }
+      },
+      "variant": {
+        "data": {
+          "type": "variants",
+          "id": "871501"
+        }
+      }
+    }
+  }
+}'
