@@ -42,6 +42,8 @@ Steps:-
     ✔️ Even one-time payments require a variant.
     This is where the default price is defined (but you can override it from your backend using custom_price).
     for find verient id ==> dashboard/store/products/click on already created product /add varient in side product / select varient/ show varient id in url/ like ==> https://app.lemonsqueezy.com/products/560551/variants/871501
+![image](https://github.com/user-attachments/assets/6fe77889-5454-4dc7-b1d4-e2ba7436c5de)
+
 
 5️⃣ One-Time Payment Flow
     ✔️ How to choose one-time payment:
