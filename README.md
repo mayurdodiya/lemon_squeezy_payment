@@ -20,8 +20,9 @@ Steps:-
 2️⃣ Create Store
     After login, click "Create Store".
     This store acts as your business profile.
-    Store ID is visible in the URL:
-        Example URL:   https://app.lemonsqueezy.com/store/194730/products
+    Store ID is find as:
+        go in ==> dashboard/setting/Stores/find your created store and Id / #194730
+        ![image](https://github.com/user-attachments/assets/4eb5c4b3-1419-48c9-95ff-48428cfd0854)
         👉 Store ID = 194730
 
 3️⃣ Create Product & Variant
@@ -40,6 +41,7 @@ Steps:-
     Variant = Specific pricing option for the product.
     ✔️ Even one-time payments require a variant.
     This is where the default price is defined (but you can override it from your backend using custom_price).
+    for find verient id ==> dashboard/store/products/click on already created product /add varient in side product / select varient/ show varient id in url/ like ==> https://app.lemonsqueezy.com/products/560551/variants/871501
 
 5️⃣ One-Time Payment Flow
     ✔️ How to choose one-time payment:
@@ -87,3 +89,6 @@ Steps:-
     ✔️ Customers cannot change this price. It’s fully server-side controlled.
 
 1️⃣1️⃣official docs 👉 https://docs.lemonsqueezy.com
+
+
+
